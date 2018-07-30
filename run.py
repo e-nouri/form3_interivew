@@ -1,5 +1,7 @@
 import os
 from eve import Eve
+from src.validators.uuidv4 import UUIDValidator
+from src.encoders.encoder import Encoder
 
 # Heroku support: bind to PORT if defined, otherwise default to 5000.
 if 'PORT' in os.environ:
@@ -11,7 +13,7 @@ else:
     port = 5000
     host = '127.0.0.1'
 
-app = Eve()
+app = Eve(json_encoder=Encoder, validator=UUIDValidator)
 
 
 if __name__ == '__main__':

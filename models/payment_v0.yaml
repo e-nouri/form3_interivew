@@ -3,7 +3,7 @@ type:
     type: string
     required: true
 id:
-    type: uuidv4
+    type: uuid
     required: true
     # This show be the unique key
     # I am not sure though because of the version, this with the versuon should be unique
@@ -15,7 +15,7 @@ version:
     type: number
     required: true
 organisation_id:
-    type: uuidv4
+    type: uuid
     required: true
 attributes:
     type: dict
