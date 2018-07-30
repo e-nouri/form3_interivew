@@ -1,0 +1,20 @@
+type:
+    # This can be hardcoded because it is payment endpoin, or droped
+    type: string
+    required: true
+id:
+    type: uuidv4
+    required: true
+version:
+    # This can be hardcoded because it is good practice to keep
+    # all versions in source control (git) as seperat files
+    type: number
+    required: true
+organisation_id:
+    type: uuidv4
+    required: true
+attributes:
+    type: dict
+    # This is because I am not detailing all of the fields here
+    allow_unknown: true
+    required: true
