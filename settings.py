@@ -41,3 +41,8 @@ ITEM_URL = 'regex("[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}")'
 IF_MATCH = False
 ITEMS = 'data'
 DOMAIN = {'payments': payments}
+
+# THis is for the JWT
+JWT_SECRET = "secret"
+JWT_ISSUER = "form3"
+JWT_AUDIENCES = ['admin']

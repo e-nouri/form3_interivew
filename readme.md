@@ -7,6 +7,8 @@ How to make this work:
 - Have mongo running on local
 - type python run.py
 
+for testing Purposes, I made a token that expires in 2019:
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiTm91cmkgTk9VUkkiLCJhdWQiOiJhZG1pbiIsImlzcyI6ImZvcm0zIiwic3ViIjoiZmFrZSIsImlhdCI6MTUzMzAyNTEzNiwiZXhwIjoxNTc2MjI1MTM2fQ.CoXC68VkpoJjS7SyUjTsU7RaZIhpqpwfmaXGZbGB_yw
 
 
 REST API Documentation:
@@ -50,7 +52,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "Please provide proper credentials" }`
 
   OR
 
@@ -98,7 +100,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "Please provide proper credentials" }`
 
 * **Sample Call:**
 
@@ -167,7 +169,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "Please provide proper credentials" }`
 
 * **Sample Call:**
 
@@ -212,7 +214,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "Please provide proper credentials" }`
 
 * **Sample Call:**
 
@@ -269,7 +271,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "Please provide proper credentials" }`
 
 * **Sample Call:**
 
@@ -332,7 +334,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "Please provide proper credentials" }`
 
 * **Sample Call:**
 
