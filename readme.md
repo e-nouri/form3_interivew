@@ -18,7 +18,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
 
 **Request all Payment**
 ----
-  Payments API.
+  Get All Payments.
 
 * **URL**
 
@@ -59,14 +59,14 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
 * **Sample Call:**
 
   ```python
-    requests.get("api/payments/")
+    requests.get("/api/payments/")
   ```
 
 ---
 
 **Request Payment with ID**
 ----
-  Payments API.
+  Get a Payments with its ID.
 
 * **URL**
 
@@ -103,7 +103,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
 * **Sample Call:**
 
   ```python
-    requests.get("api/payments/743d5b63-8e6f-432e-a8fa-c5d8d2ee5fcb")
+    requests.get("/api/payments/743d5b63-8e6f-432e-a8fa-c5d8d2ee5fcb")
   ```
 
 ---
@@ -172,7 +172,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
 * **Sample Call:**
 
   ```python
-    requests.post("api/payments/", body)
+    requests.post("/api/payments/", body)
   ```
 
 ---
@@ -217,7 +217,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
 * **Sample Call:**
 
   ```python
-    requests.get("api/payments/743d5b63-8e6f-432e-a8fa-c5d8d2ee5fcb")
+    requests.delete("/api/payments/743d5b63-8e6f-432e-a8fa-c5d8d2ee5fcb")
   ```
 
 ---
@@ -274,13 +274,15 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
 * **Sample Call:**
 
   ```python
-    requests.post("api/payments/", body)
+    requests.patch("/api/payments/", body)
   ```
 
+---
 
 **Replace a Payment**
 ----
   Replace a Payment object.
+  NB: We can use upsert here, if the ID does not exist, this will be like a POST on the endpoint /payments/
 
 * **URL**
 
@@ -335,5 +337,5 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
 * **Sample Call:**
 
   ```python
-    requests.put("api/payments/", body)
+    requests.put("/api/payments/", body)
   ```
