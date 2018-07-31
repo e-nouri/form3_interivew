@@ -5,9 +5,9 @@ type:
 id:
     type: uuid
     required: true
-    # This show be the unique key
-    # I am not sure though because of the version, this with the versuon should be unique
-    # for the sake of simplicity I will use this as the unique ID
+    # This shoulw be the unique key
+    # Because of the version, the unique key should be the (id, versuon)
+    # for the sake of simplicity I will use this as the unique key
     unique: true
 version:
     # This can be hardcoded because it is good practice to keep
