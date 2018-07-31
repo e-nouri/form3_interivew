@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: paymentsapi
+  namespace: staging
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: payments
+    spec:
+      containers:
+        - name: starget
+          image: eu.gcr.io/nourix2/payments:latest
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+        env:
+        - name: PORT
+          value: "3000"

@@ -28,7 +28,7 @@ The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
 
 * **Method:**
 
-  `POST`
+  `GET`
   
 *  **URL Params**
 
