@@ -1,12 +1,19 @@
 This is a repo for the form3 technical interivew.
 
-The endpoint /payments acceptes: ['GET', 'POST'] <br />
-The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
+How to make this work:
+=======================
 
----
+- Use virtualenv
+- Have mongo running on local
+- type python run.py
+
+
 
 REST API Documentation:
 =======================
+
+The endpoint /payments acceptes: ['GET', 'POST'] <br />
+The endpoint /payments/:id acceptes: ['GET', 'PATCH', 'PUT', 'DELETE']
 
 
 **Request all Payment**
@@ -43,7 +50,7 @@ REST API Documentation:
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
 
   OR
 
@@ -91,7 +98,7 @@ REST API Documentation:
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
 
 * **Sample Call:**
 
@@ -160,7 +167,7 @@ REST API Documentation:
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
 
 * **Sample Call:**
 
@@ -205,7 +212,7 @@ REST API Documentation:
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
 
 * **Sample Call:**
 
@@ -262,7 +269,7 @@ REST API Documentation:
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
 
 * **Sample Call:**
 
@@ -323,7 +330,7 @@ REST API Documentation:
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+    **Content:** `{ "_error" : "You are unauthorized to make this request." }`
 
 * **Sample Call:**
 
