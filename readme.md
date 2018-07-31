@@ -34,12 +34,11 @@ REST API Documentation:
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
  
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+    **Content:** `{"_error": {"message": "The requested URL was not found on the server.", "code": 404} }`
 
   OR
 
@@ -49,12 +48,11 @@ REST API Documentation:
   OR
 
   * **Code:** 400 BAD REQUEST <br />
-    **Content:** `{ error : "out of range parameters." }`
 
 * **Sample Call:**
 
   ```python
-    requests.get("api/payments/1234656")
+    requests.get("api/payments/")
   ```
 
 ---
@@ -84,12 +82,11 @@ REST API Documentation:
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
  
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+    **Content:** `{"_error": {"message": "The requested URL was not found on the server.", "code": 404} }`
 
   OR
 
@@ -154,12 +151,11 @@ REST API Documentation:
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
  
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+    **Content:** `{"_error": {"message": "The requested URL was not found on the server.", "code": 404} }`
 
   OR
 
@@ -204,7 +200,7 @@ REST API Documentation:
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+    **Content:** `{"_error": {"message": "The requested URL was not found on the server.", "code": 404} }`
 
   OR
 
@@ -257,12 +253,11 @@ REST API Documentation:
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
  
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+    **Content:** `{"_error": {"message": "The requested URL was not found on the server.", "code": 404} }`
 
   OR
 
@@ -319,12 +314,11 @@ REST API Documentation:
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
  
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+    **Content:** `{"_error": {"message": "The requested URL was not found on the server.", "code": 404} }`
 
   OR
 
